@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Gallery</title>
+    <link rel="icon"
+        href="image/DALL·E 2025-03-04 20.43.13 - A modern and stylish logo for an 'Image Gallery' featuring a minimalist camera icon with a colorful gradient. The design should be sleek and professio.webp">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <nav>
+
+            <div class="items">
+                <span class="item active" data-name="all">All</span>
+                <span class="item" data-name="place">Place & Travel</span>
+                <span class="item" data-name="animals">Animals</span>
+                <span class="item" data-name="art">Art & Creativity</span>
+                <span class="item" data-name="food">Food & Drinks</span>
+                <span class="item" data-name="nature">Nature</span>
+            </div>
+
+            <input type="text" id="searchBox" placeholder="Search images...">
+            <p id="noResultsMessage" style="display: none; text-align: center; color: red; font-weight: bold;">
+                No images found!
+            </p>
+
+
+        </nav>
+        <h1 class="title"> Image Gallery</h1>
+        <div class="gallery">
+            <div class="image" data-name="art"><span><img src="image/a2.jpg" alt=""></span></div>
+            <div class="image" data-name="place"><span><img src="image/n2.jpg" alt=""></span></div>
+            <div class="image" data-name="animals"><span><img src="image/w1.jpg" alt=""></span></div>
+            <div class="image" data-name="food"><span><img src="image/d1.jpg" alt=""></span></div>
+            <div class="image" data-name="art"><span><img src="image/a3.jpg" alt=""></span></div>
+            <div class="image" data-name="place"><span><img src="image/n1.jpg" alt=""></span></div>
+            <div class="image" data-name="animals"><span><img src="image/w2.jpg" alt=""></span></div>
+            <div class="image" data-name="food"><span><img src="image/d2.jpg" alt=""></span></div>
+            <div class="image" data-name="art"><span><img src="image/a4.webp" alt=""></span></div>
+            <div class="image" data-name="place"><span><img src="image/n3.jpg" alt=""></span></div>
+            <div class="image" data-name="animals"><span><img src="image/w3.jpg" alt=""></span></div>
+            <div class="image" data-name="food"><span><img src="image/d3.jpg" alt=""></span></div>
+            <div class="image" data-name="food"><span><img src="image/d4.jpg" alt=""></span></div>
+            <div class="image" data-name="art"><span><img src="image/a5.jpg" alt=""></span></div>
+            <div class="image" data-name="place"><span><img src="image/n4.jpg" alt=""></span></div>
+            <div class="image" data-name="food"><span><img src="image/d5.jpg" alt=""></span></div>
+            <div class="image" data-name="place"><span><img src="image/n5.jpg" alt=""></span></div>
+            <div class="image" data-name="art"><span><img src="image/a6.jpg" alt=""></span></div>
+            <div class="image" data-name="nature"><span><img src="image/na1.jpeg" alt=""></span></div>
+            <div class="image" data-name="nature"><span><img src="image/na2.jpg" alt=""></span></div>
+            <div class="image" data-name="nature"><span><img src="image/na3.jpg" alt=""></span></div>
+            <div class="image" data-name="nature"><span><img src="image/na4.jpg" alt=""></span></div>
+            <div class="image" data-name="nature"><span><img src="image/na5.webp" alt=""></span></div>
+            <div class="image" data-name="nature"><span><img src="image/na6.jpg" alt=""></span></div>
+
+
+        </div>
+    </div>
+
+    <div class="preview-box">
+        <div class="details">
+            <span class="title">Image Category: <p></p></span>
+            <span class="image-count"></span>
+            <span class="icon"><i class="fas fa-times"></i></span>
+        </div>
+        <div class="image-box">
+            <img src="" alt="">
+        </div>
+        <div class="preview-nav">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            <button class="fullscreen-btn"><i class="fas fa-expand"></i></button> <button class="download-btn"
+                download><i class="fas fa-download"></i></button>
+        </div>
+    </div>
+    <div class="shadow"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
