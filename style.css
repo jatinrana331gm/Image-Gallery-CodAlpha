@@ -435,6 +435,7 @@ body {
     max-width: 90%;
   }
 }
+
 @media (max-width: 600px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
@@ -445,8 +446,18 @@ body {
     font-size: 12px;
     padding: 8px;
   }
-}
 
+  .dark-mode-toggle {
+    position: static;
+    margin-top: 10px;
+  }
+
+  #searchBox {
+    width: 90%;
+    max-width: 300px;
+    font-size: 14px;
+  }
+}
 
 @media (min-width: 601px) and (max-width: 1024px) {
   .gallery {
@@ -469,7 +480,6 @@ body {
     max-width: 80%;
   }
 }
-
 
 @media (min-width: 1025px) {
   .gallery {
