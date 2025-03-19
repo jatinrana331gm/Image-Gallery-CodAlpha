@@ -29,12 +29,12 @@ body {
   margin: 20px auto;
   max-width: 1100px;
 }
-
+ 
 .wrapper nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed; /* Fix navbar to the top */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
@@ -373,8 +373,6 @@ body {
 }
 
 
-
-
 /* Default: Responsive Grid for All Screens */
 .gallery {
   display: grid;
@@ -400,7 +398,7 @@ body {
 
   /* Navbar flexbox for mobile */
   .wrapper nav {
-    position: relative;  /* Removed fixed position */
+    position: absolute;  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -468,7 +466,7 @@ body {
   }
 
   .wrapper nav {
-    position: relative; /* Keeping it relative for tablet view */
+    position: absolute; 
     display: flex;
     flex-direction: row;
     justify-content: center;
