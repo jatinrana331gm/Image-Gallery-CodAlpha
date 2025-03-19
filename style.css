@@ -394,27 +394,28 @@ body {
   }
 
   .dark-mode-toggle {
-    top: 80px;
-    right: 50%;
-    transform: translateX(50%);
     font-size: 14px;
     padding: 5px 10px;
   }
 
+  /* Navbar flexbox for mobile */
   .wrapper nav {
-    position: relative;  
+    position: relative;  /* Removed fixed position */
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     padding: 10px;
+    background: #222;
+    width: 100%;
   }
 
   .items {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 8px;
-  }
-
-  h1 {
-    font-size: 1.8em;
   }
 
   .items span {
@@ -422,13 +423,21 @@ body {
     padding: 5px 12px;
   }
 
+  h1 {
+    font-size: 1.8em;
+  }
+
   .search-container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 5px;
+    width: 100%;
   }
 
   #searchBox {
-    width: 100%;
+    width: 90%;
+    max-width: 300px;
     font-size: 14px;
   }
 
@@ -449,14 +458,7 @@ body {
   }
 
   .dark-mode-toggle {
-    position: static;
     margin-top: 10px;
-  }
-
-  #searchBox {
-    width: 90%;
-    max-width: 300px;
-    font-size: 14px;
   }
 }
 
@@ -466,7 +468,10 @@ body {
   }
 
   .wrapper nav {
-    position: relative;  
+    position: relative; /* Keeping it relative for tablet view */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding: 10px 20px;
   }
 
@@ -493,7 +498,7 @@ body {
   }
 }
 
-
+/* Dark Mode Styles */
 .dark-mode {
   background: #121212;
   color: #ffffff;
@@ -515,4 +520,3 @@ body {
 .dark-mode .dark-mode-toggle:hover {
   background: #ccc;
 }
-
