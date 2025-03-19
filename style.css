@@ -381,108 +381,60 @@ body {
   padding: 10px;
 }
 
-@media (max-width: 480px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .title {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .dark-mode-toggle {
-    font-size: 14px;
-    padding: 5px 10px;
-  }
-
-  /* Navbar flexbox for mobile */
+@media (max-width: 768px) {
   .wrapper nav {
-    position: absolute;  
+    position: relative;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 10px;
-    padding: 10px;
-    background: #222;
-    width: 100%;
+    padding: 15px;
   }
 
   .items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 4px;
   }
-
-  .items span {
-    font-size: 14px;
-    padding: 5px 12px;
-  }
-
-  h1 {
-    font-size: 1.8em;
-  }
-
   .search-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 5px;
+    justify-content: space-between;
     width: 100%;
+    padding: 5px;
   }
 
   #searchBox {
-    width: 90%;
-    max-width: 300px;
+    flex: 1;
     font-size: 14px;
-  }
-
-  .preview-box {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 600px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .preview-nav button {
-    font-size: 12px;
-    padding: 8px;
+    padding: 6px;
+    height: 32px;
+    border-radius: 5px;
   }
 
   .dark-mode-toggle {
-    margin-top: 10px;
+    padding: 6px 10px;
+    font-size: 14px;
+    height: 32px;
+    border-radius: 5px;
+    white-space: nowrap;
+    margin-left: 8px; 
   }
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+
+@media (min-width: 769px) and (max-width: 1024px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .wrapper nav {
-    position: absolute; 
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 10px 20px;
-  }
-
-  .wrapper .items {
-    justify-content: center;
-  }
-
-  h1 {
-    font-size: 2.2em;
-  }
-
-  .preview-box {
-    max-width: 80%;
+    justify-content: space-between;
+    padding: 15px;
   }
 }
 
@@ -490,31 +442,4 @@ body {
   .gallery {
     grid-template-columns: repeat(4, 1fr);
   }
-
-  .preview-box {
-    max-width: 700px;
-  }
-}
-
-/* Dark Mode Styles */
-.dark-mode {
-  background: #121212;
-  color: #ffffff;
-}
-
-.dark-mode nav {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.dark-mode .gallery .image span img {
-  filter: brightness(90%);
-}
-
-.dark-mode .dark-mode-toggle {
-  background: white;
-  color: black;
-}
-
-.dark-mode .dark-mode-toggle:hover {
-  background: #ccc;
 }
